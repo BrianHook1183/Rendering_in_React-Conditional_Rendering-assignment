@@ -1,8 +1,14 @@
 import React from "react";
 import Clock from "./Clock";
 
-function App() {
-  
+function App({ loggedIn }) {
+  return loggedIn ?  <Clock /> : null;
+  // return loggedIn && <Clock />;
+  /* 
+  if (loggedIn) {
+    return <Clock />;
+  }
+   */
 }
 
 export default App;
